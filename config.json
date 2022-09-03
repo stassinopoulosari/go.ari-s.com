@@ -25,6 +25,11 @@
         "shortcut": "/sso/reset",
         "url": "https://iam.ucsd.edu/ResetPassword/",
         "title": "Business Systems Password Reset"
+      },
+      {
+        "shortcut": "/speedtest",
+        "url": "https://fast.com",
+        "title": "Fast.com Speedtest"
       }
     ]
   }
