@@ -17,6 +17,11 @@
         "title": "Better Call Saul Theme Song"
       },
       {
+        "shortcut": "/newad",
+        "url": "https://itsweb.ucsd.edu/manage-sso/applicant",
+        "title": "Manage SSO"
+      },
+      {
         "shortcut": "/sso",
         "url": "https://blink.ucsd.edu/technology/network/access/business-systems/index.html",
         "title": "Business Systems Info Page"
@@ -27,9 +32,19 @@
         "title": "Business Systems Password Reset"
       },
       {
-        "shortcut": "/speedtest",
-        "url": "https://fast.com",
-        "title": "Fast.com Speedtest"
+        "shortcut": "/speed",
+        "url": "https://speedtest.net",
+        "title": "Speedtest.net"
+      },
+      {
+        "shortcut": "/x",
+        "url": "https://mail.ucd.edu",
+        "title": "UCSD OWA"
+      },
+      {
+        "shortcut": "/g",
+        "url": "https://gmail.ucsd.edu",
+        "title": "UCSD Gmail"
       }
     ]
   }
