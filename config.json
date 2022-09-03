@@ -1,0 +1,14 @@
+{
+  "notes":[
+    "You are viewing the configuration file for UCSD.IT.",
+    "All configuration must go in the \"configuration\" list.",
+    "Any running index.js will result in changes to this file as well as",
+    "a rebuild of the directory specified in the configuration."
+  ],
+  "data":{
+    "lastRun":"never"
+  },
+  "configuration":{
+    "path":"../gh-pages"
+  }
+}
