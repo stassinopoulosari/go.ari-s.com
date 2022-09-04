@@ -140,7 +140,7 @@ const clearOutTemplates = (path) => {
     log('Clearing out `' + path + '`...')
 
     const rl = readline.createInterface(process.stdin, process.stdout);
-    const paths = fs.readdirSync(path).filter(fileName => fileName[0] != '.' && fileName !== 'CNAME').map(fileName => path + '/' + fileName);
+    const paths = fs.readdirSync(path).filter(fileName => fileName[0] != '.' && fileName !== 'CNAME' && fileName !== '404.html').map(fileName => path + '/' + fileName);
     console.log('Confirm you would like to delete the following files:')
     paths.forEach((path) => console.log('  - ' + path))
     console.log('');
