@@ -8,6 +8,8 @@ Current shortcuts:
 + **Manage SSO**: ucsd.it/newad --> https://itsweb.ucsd.edu/manage-sso/applicant
 + **Business Systems Info Page**: ucsd.it/sso --> https://blink.ucsd.edu/technology/network/access/business-systems/index.html
 + **Business Systems Password Reset**: ucsd.it/sso/reset --> https://iam.ucsd.edu/ResetPassword/
++ **Business Systems Self-Registration**: ucsd.it/sso/register --> https://a4.ucsd.edu/selfreg/supplyemail.do
++ **Business Systems DSA Search**: ucsd.it/dsasearch --> https://iam.ucsd.edu/dsasearch/
 + **Speedtest.net**: ucsd.it/speed --> https://speedtest.net
 + **UCSD OWA**: ucsd.it/x --> https://mail.ucd.edu
 + **UCSD Gmail**: ucsd.it/g --> https://gmail.ucsd.edu
