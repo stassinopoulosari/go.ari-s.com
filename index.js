@@ -1,10 +1,9 @@
 const fs = require("fs"),
-  prettyjson = require('prettyjson'),
   readline = require('readline');
 
 const args = process.argv.map((arg) => arg.toLowerCase()),
-  isQuiet = ['-q', '--quiet'].some(
-    (argument) => args.includes(argument)
+  isQuiet = ['-v', '--verbose'].every(
+    (argument) => !args.includes(argument)
   )
 
 const log = (string) => {
@@ -18,13 +17,12 @@ const getVersion = () => {
   return new Promise((resolve, reject) => {
     fs.readFile('./package.json', 'utf-8', (err, data) => {
       if (err) {
-        return reject(new Error('Could not find package.json.'));
+        return reject(new Error('Could not find `./package.json`.'));
       }
       const package = JSON.parse(data);
       if (package.version === undefined) {
-        return reject(new Error('`version` must be set in package.json.'));
+        return reject(new Error('`version` must be set in `./package.json.`'));
       }
-
       return resolve(package.version);
     });
   });
@@ -54,13 +52,14 @@ const loadConfiguration = () => {
 
       if (path === undefined || typeof path !== "string") {
         return reject(new Error('Configured path is malformed or missing.'));
-      } else if (!fs.existsSync(path) || !fs.lstatSync(path).isDirectory()) {
+      }
+      if (!fs.existsSync(path) || !fs.lstatSync(path).isDirectory()) {
         return reject(new Error(
           'Configured path ' +
           path +
           '` does not exist or if not a folder.'
         ));
-      } else if (path.slice(0, 2) != '..' && path[0] != '~' && path[0] != '/' || path === '/') {
+      } else if (path.slice(0, 2) != '..' && path[0] != '~' && path[0] != '/' || path.trim() === '/') {
         return reject(new Error(
           'Path must not be a subfolder. Must be either a relative path beginning with `..`, `/`, or `~`. It must not be the root directory.'
         ));
@@ -80,7 +79,7 @@ const loadConfiguration = () => {
 
         const shortcut = shortcuts[shortcutKey];
         if (!(shortcut instanceof Object)) {
-          return reject(new Error('Shortcut ' + String(shortcut) + ' is not an object.'));
+          return reject(new Error('Shortcut `' + String(shortcut) + '` is not an object.'));
         }
         const shortcutKeys = Object.keys(shortcut);
         if (
@@ -89,9 +88,9 @@ const loadConfiguration = () => {
         ) {
           return reject(
             new Error(
-              'Shortcut ' +
-              JSON.stringify(shortcut) +
-              ' does not include all required keys `shortcut`, `url`, and `title`'
+              'Shortcut `' +
+              JSON.stringify(shortcut, null, 4) +
+              '` does not include all required keys `shortcut`, `url`, and `title`'
             )
           );
         }
@@ -159,6 +158,93 @@ const clearOutTemplates = (path) => {
       return resolve(true);
     });
   });
+};
+
+const writeShortcuts = (path, shortcuts, template, version) => {
+  const runTemplate = (shortcut) => {
+    return template
+      .replaceAll('{{url}}', shortcut.url)
+      .replaceAll('{{title}}', shortcut.title)
+      .replaceAll('{{ver}}', version);
+  };
+
+  return new Promise((resolve, reject) => {
+    log('Writing new shortcuts...');
+    const numShortcuts = shortcuts.length;
+    var promises = [];
+    for (var shortcutKey in shortcuts) {
+      const shortcut = shortcuts[shortcutKey],
+        sPath = shortcut.shortcut,
+        sURL = shortcut.url,
+        sTitle = shortcut.title,
+        sPathComponents = sPath.split('/').filter((component) => component != '');
+      var workingPath = path;
+      sPathComponents.forEach(component => {
+        workingPath += '/' + component;
+        if (!fs.existsSync(workingPath)) {
+          fs.mkdirSync(workingPath);
+        }
+      });
+      const fileURL = workingPath + '/index.html';
+      promises.push(new Promise((fResolve, fReject) => {
+        fs.writeFile(fileURL, runTemplate(shortcut), (err) => {
+          if (err) {
+            return fReject(err);
+          }
+          log('    Wrote `' + fileURL + '`');
+          return fResolve();
+        });
+      }));
+    }
+    Promise.all(promises).then(() => {
+      log('New shortcuts written!');
+      return resolve();
+    });
+  });
+
+};
+
+const updateConfiguration = (allConfiguration) => {
+  allConfiguration.data = {
+    lastRun: new Date().toString()
+  };
+  const configurationString = JSON.stringify(allConfiguration, null, 4);
+  return new Promise((resolve, reject) => {
+    fs.writeFile('./config.json', configurationString, (err) => {
+      if (err) return reject();
+      log('Updated `./config.json`!');
+      return resolve();
+    });
+  });
+};
+
+const updateREADME = (shortcuts, version) => {
+  return new Promise((resolve, reject) => {
+    fs.readFile('./README_template.md', 'utf-8', (err, readmeTemplate) => {
+      if (err) {
+        return reject(err);
+      }
+
+      const readmeFilledIn = readmeTemplate
+        .replaceAll('{{ver}}', version)
+        .replaceAll('{{shortcutList}}', shortcuts.map(
+          (shortcut) => '+ **' +
+          shortcut.title +
+          '**: ucsd.it' +
+          shortcut.shortcut +
+          ' --> ' +
+          shortcut.url
+        ).join('\n'));
+
+      fs.writeFile('./README.md', readmeFilledIn, (err) => {
+        if(err) return reject(err);
+
+        log('Updated configuration!');
+
+        return resolve();
+      })
+    });
+  });
 }
 
 Promise.all([getVersion(), loadConfiguration()]).then((returnedValues) => {
@@ -171,45 +257,20 @@ Promise.all([getVersion(), loadConfiguration()]).then((returnedValues) => {
     shortcuts = config.shortcuts;
 
   log('Loading template...');
-  fs.readFile(templatePath, 'utf-8', (err, data) => {
+  fs.readFile(templatePath, 'utf-8', (err, template) => {
     if (err) {
       throw err;
       return;
     }
-    const runTemplate = (shortcut) => {
-      return data
-        .replaceAll('{{url}}', shortcut.url)
-        .replaceAll('{{title}}', shortcut.title)
-        .replaceAll('{{ver}}', version);
-    };
 
     clearOutTemplates(path).then(() => {
-      log('Writing new shortcuts...');
-      const numShortcuts = shortcuts.length;
-      for(var shortcutKey in shortcuts) {
-        const shortcut = shortcuts[shortcutKey],
-        sPath = shortcut.shortcut,
-        sURL = shortcut.url,
-        sTitle = shortcut.title,
-        sPathComponents = sPath.split('/').filter((component) => component != '');
-
-        log('  Writing shortcut ' + sPath + ' (' + (parseInt(shortcutKey) + 1) + '/' + numShortcuts + ')...')
-
-        var workingPath = path;
-        sPathComponents.forEach(component => {
-          workingPath += '/' + component;
-          if(!fs.existsSync(workingPath)) {
-            fs.mkdirSync(workingPath);
-          }
-        });
-
-        const fileURL = workingPath + '/index.html';
-        fs.writeFileSync(fileURL, runTemplate(shortcut));
-
-        log('    Written!');
-
-      }
-      log('New shortcuts written! Exiting...');
+      writeShortcuts(path, shortcuts, template, version).then(() => {
+        Promise.all(
+          [updateConfiguration(allConfiguration), updateREADME(shortcuts, version)]
+        ).then(() => {
+          log('Done!');
+        })
+      });
     });
   });
 })

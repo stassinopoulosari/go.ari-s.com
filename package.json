@@ -7,8 +7,5 @@
     "start": "node index.js"
   },
   "author": "Ari Stassinopoulos (stassinopoulosari)",
-  "license": "ISC",
-  "dependencies": {
-    "prettyjson": "^1.2.5"
-  }
+  "license": "ISC"
 }

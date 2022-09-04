@@ -1,51 +1,52 @@
 {
-  "notes": [
-    "You are viewing the configuration file for UCSD.IT.",
-    "All configuration must go in the \"configuration\" list.",
-    "Any running index.js will result in changes to this file as well as",
-    "a rebuild of the directory specified in the configuration."
-  ],
-  "data": {
-    "lastRun": "never"
-  },
-  "configuration": {
-    "path": "../gh_pages",
-    "template": "./redirectPage.html",
-    "shortcuts": [{
-        "shortcut": "/",
-        "url": "https://www.youtube.com/watch?v=5AI44gnaLxY",
-        "title": "Better Call Saul Theme Song"
-      },
-      {
-        "shortcut": "/newad",
-        "url": "https://itsweb.ucsd.edu/manage-sso/applicant",
-        "title": "Manage SSO"
-      },
-      {
-        "shortcut": "/sso",
-        "url": "https://blink.ucsd.edu/technology/network/access/business-systems/index.html",
-        "title": "Business Systems Info Page"
-      },
-      {
-        "shortcut": "/sso/reset",
-        "url": "https://iam.ucsd.edu/ResetPassword/",
-        "title": "Business Systems Password Reset"
-      },
-      {
-        "shortcut": "/speed",
-        "url": "https://speedtest.net",
-        "title": "Speedtest.net"
-      },
-      {
-        "shortcut": "/x",
-        "url": "https://mail.ucd.edu",
-        "title": "UCSD OWA"
-      },
-      {
-        "shortcut": "/g",
-        "url": "https://gmail.ucsd.edu",
-        "title": "UCSD Gmail"
-      }
-    ]
-  }
+    "notes": [
+        "You are viewing the configuration file for UCSD.IT.",
+        "All configuration must go in the \"configuration\" list.",
+        "Any running index.js will result in changes to this file as well as",
+        "a rebuild of the directory specified in the configuration."
+    ],
+    "data": {
+        "lastRun": "Sat Sep 03 2022 17:35:55 GMT-0700 (Pacific Daylight Time)"
+    },
+    "configuration": {
+        "path": "../gh_pages",
+        "template": "./redirectPage.html",
+        "shortcuts": [
+            {
+                "shortcut": "/",
+                "url": "https://www.youtube.com/watch?v=5AI44gnaLxY",
+                "title": "Better Call Saul Theme Song"
+            },
+            {
+                "shortcut": "/newad",
+                "url": "https://itsweb.ucsd.edu/manage-sso/applicant",
+                "title": "Manage SSO"
+            },
+            {
+                "shortcut": "/sso",
+                "url": "https://blink.ucsd.edu/technology/network/access/business-systems/index.html",
+                "title": "Business Systems Info Page"
+            },
+            {
+                "shortcut": "/sso/reset",
+                "url": "https://iam.ucsd.edu/ResetPassword/",
+                "title": "Business Systems Password Reset"
+            },
+            {
+                "shortcut": "/speed",
+                "url": "https://speedtest.net",
+                "title": "Speedtest.net"
+            },
+            {
+                "shortcut": "/x",
+                "url": "https://mail.ucd.edu",
+                "title": "UCSD OWA"
+            },
+            {
+                "shortcut": "/g",
+                "url": "https://gmail.ucsd.edu",
+                "title": "UCSD Gmail"
+            }
+        ]
+    }
 }
