@@ -2,7 +2,10 @@ const fs = require("fs"),
   readline = require('readline');
 
 const args = process.argv.map((arg) => arg.toLowerCase()),
-  isQuiet = ['-v', '--verbose'].every(
+  isQuiet = ['-v', '--verbose', '-vf', '-fv'].every(
+    (argument) => !args.includes(argument)
+  ),
+  isUnforced = ['-f', '--force', '-vf', '-fv'].every(
     (argument) => !args.includes(argument)
   )
 
@@ -138,25 +141,36 @@ const loadConfiguration = () => {
 const clearOutTemplates = (path) => {
   return new Promise((resolve, reject) => {
     log('Clearing out `' + path + '`...')
-
-    const rl = readline.createInterface(process.stdin, process.stdout);
-    const paths = fs.readdirSync(path).filter(fileName => fileName[0] != '.' && fileName !== 'CNAME' && fileName !== '404.html' && fileName !== 'README.md').map(fileName => path + '/' + fileName);
-    console.log('Confirm you would like to delete the following files:')
-    paths.forEach((path) => console.log('  - ' + path))
-    console.log('');
-    rl.question("Y/(N): ", (answer) => {
-      if (answer.trim().toUpperCase() !== 'Y') {
+    const paths = fs.readdirSync(path).filter(fileName => fileName[0] != '.' &&
+      fileName !== 'CNAME' &&
+      fileName !== '404.html' &&
+      fileName !== 'README.md'
+    ).map(fileName => path + '/' + fileName),
+    deleteAll = (paths) => paths.forEach((path) => fs.rmSync(path, {
+      'recursive': true
+    }));
+    if (isUnforced) {
+      console.log('Confirm you would like to delete the following files:')
+      paths.forEach((path) => console.log('  - ' + path))
+      console.log('');
+      const rl = readline.createInterface(process.stdin, process.stdout);
+      rl.question("(Y)/N: ", (answer) => {
+        if (answer.trim().toUpperCase() === 'N') {
+          rl.close();
+          return reject(new Error('User rejected deletion'));
+        }
         rl.close();
-        return reject(new Error('User rejected deletion'));
-      }
-      rl.close();
+        log('Deleting...');
+        deleteAll(paths);
+        log('Files deleted.');
+        return resolve(true);
+      });
+    } else {
       log('Deleting...');
-      paths.forEach((path) => fs.rmSync(path, {
-        'recursive': true
-      }));
+      deleteAll(paths);
       log('Files deleted.');
       return resolve(true);
-    });
+    }
   });
 };
 
@@ -237,7 +251,7 @@ const updateREADME = (shortcuts, version) => {
         ).join('\n'));
 
       fs.writeFile('./README.md', readmeFilledIn, (err) => {
-        if(err) return reject(err);
+        if (err) return reject(err);
 
         log('Updated configuration!');
 
