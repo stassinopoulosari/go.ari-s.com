@@ -6,17 +6,12 @@
         "a rebuild of the directory specified in the configuration."
     ],
     "data": {
-        "lastRun": "Sat Sep 03 2022 17:47:11 GMT-0700 (Pacific Daylight Time)"
+        "lastRun": "Sat Sep 03 2022 17:58:43 GMT-0700 (Pacific Daylight Time)"
     },
     "configuration": {
         "path": "../gh_pages",
         "template": "./redirectPage.html",
         "shortcuts": [
-            {
-                "shortcut": "/",
-                "url": "https://www.youtube.com/watch?v=5AI44gnaLxY",
-                "title": "Better Call Saul Theme Song"
-            },
             {
                 "shortcut": "/newad",
                 "url": "https://itsweb.ucsd.edu/manage-sso/applicant",
@@ -46,6 +41,11 @@
                 "shortcut": "/g",
                 "url": "https://gmail.ucsd.edu",
                 "title": "UCSD Gmail"
+            },
+            {
+                "shortcut": "/",
+                "url": "https://www.youtube.com/watch?v=5AI44gnaLxY",
+                "title": "The Homepage"
             }
         ]
     }
