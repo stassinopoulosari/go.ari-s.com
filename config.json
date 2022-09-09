@@ -6,7 +6,7 @@
         "a rebuild of the directory specified in the configuration."
     ],
     "data": {
-        "lastRun": "Sun Sep 04 2022 16:54:07 GMT-0700 (Pacific Daylight Time)"
+        "lastRun": "Fri Sep 09 2022 13:36:36 GMT-0700 (Pacific Daylight Time)"
     },
     "configuration": {
         "path": "../gh_pages",
@@ -53,8 +53,13 @@
                 "title": "UCSD Gmail"
             },
             {
+                "shortcut": "/ucl",
+                "url": "https://uc.sumtotal.host/Broker/Account/Login.aspx?wtrealm=https%3a%2f%2fuc.sumtotal.host%2fcore%2f&ReturnUrl=http%3a%2f%2fuc.sumtotal.host%2fBroker%2fToken%2fSaml11.ashx%3fwa%3dwsignin1.0%26wtrealm%3dhttps%3a%2f%2fuc.sumtotal.host%2fcore%2f%26wreply%3dhttp%3a%2f%2fuc.sumtotal.host%2fcore%2f%26whr%3durn%3asumtotalsystems.com&whr=urn%3asumtotalsystems.com&domainid=52160A28FC58BBBE7D714E075077AC76",
+                "title": "UC Learning Login"
+            },
+            {
                 "shortcut": "/",
-                "url": "https://www.youtube.com/watch?v=5AI44gnaLxY",
+                "url": "https://github.com/stassinopoulosari/ucsd.it#readme",
                 "title": "The Homepage"
             }
         ]
