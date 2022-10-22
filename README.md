@@ -11,6 +11,7 @@
 + **Business Systems Info Page**: ucsd.it/sso --> https://blink.ucsd.edu/technology/network/access/business-systems/index.html
 + **Business Systems Password Reset**: ucsd.it/sso/reset --> https://iam.ucsd.edu/ResetPassword/
 + **Business Systems Self-Registration**: ucsd.it/sso/register --> https://a4.ucsd.edu/selfreg/supplyemail.do
++ **Global Password Reset Tool**: ucsd.it/gpr --> https://sdacs.ucsd.edu/~icc/password.php
 + **Business Systems DSA Search**: ucsd.it/dsasearch --> https://iam.ucsd.edu/dsasearch/
 + **Speedtest.net**: ucsd.it/speed --> https://speedtest.net
 + **UCSD OWA**: ucsd.it/x --> https://mail.ucd.edu

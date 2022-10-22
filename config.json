@@ -6,7 +6,7 @@
         "a rebuild of the directory specified in the configuration."
     ],
     "data": {
-        "lastRun": "Sun Sep 25 2022 16:38:39 GMT-0700 (Pacific Daylight Time)"
+        "lastRun": "Fri Oct 21 2022 18:08:11 GMT-0700 (Pacific Daylight Time)"
     },
     "configuration": {
         "path": "../gh_pages",
@@ -31,6 +31,11 @@
                 "shortcut": "/sso/register",
                 "url": "https://a4.ucsd.edu/selfreg/supplyemail.do",
                 "title": "Business Systems Self-Registration"
+            },
+            {
+                "shortcut": "/gpr",
+                "url": "https://sdacs.ucsd.edu/~icc/password.php",
+                "title": "Global Password Reset Tool"
             },
             {
                 "shortcut": "/dsasearch",
