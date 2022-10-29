@@ -6,7 +6,7 @@
         "a rebuild of the directory specified in the configuration."
     ],
     "data": {
-        "lastRun": "Fri Oct 21 2022 18:08:11 GMT-0700 (Pacific Daylight Time)"
+        "lastRun": "Sat Oct 29 2022 16:05:18 GMT-0700 (Pacific Daylight Time)"
     },
     "configuration": {
         "path": "../gh_pages",
@@ -49,7 +49,7 @@
             },
             {
                 "shortcut": "/x",
-                "url": "https://mail.ucd.edu",
+                "url": "https://mail.ucsd.edu",
                 "title": "UCSD OWA"
             },
             {

@@ -14,7 +14,7 @@
 + **Global Password Reset Tool**: ucsd.it/gpr --> https://sdacs.ucsd.edu/~icc/password.php
 + **Business Systems DSA Search**: ucsd.it/dsasearch --> https://iam.ucsd.edu/dsasearch/
 + **Speedtest.net**: ucsd.it/speed --> https://speedtest.net
-+ **UCSD OWA**: ucsd.it/x --> https://mail.ucd.edu
++ **UCSD OWA**: ucsd.it/x --> https://mail.ucsd.edu
 + **UCSD Gmail**: ucsd.it/g --> https://gmail.ucsd.edu
 + **UC Learning Login**: ucsd.it/ucl --> https://uc.sumtotal.host/Broker/Account/Login.aspx?wtrealm=https%3a%2f%2fuc.sumtotal.host%2fcore%2f&ReturnUrl=http%3a%2f%2fuc.sumtotal.host%2fBroker%2fToken%2fSaml11.ashx%3fwa%3dwsignin1.0%26wtrealm%3dhttps%3a%2f%2fuc.sumtotal.host%2fcore%2f%26wreply%3dhttp%3a%2f%2fuc.sumtotal.host%2fcore%2f%26whr%3durn%3asumtotalsystems.com&whr=urn%3asumtotalsystems.com&domainid=52160A28FC58BBBE7D714E075077AC76
 + **The Homepage**: ucsd.it/ --> https://github.com/stassinopoulosari/ucsd.it#readme
