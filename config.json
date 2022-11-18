@@ -6,7 +6,7 @@
         "a rebuild of the directory specified in the configuration."
     ],
     "data": {
-        "lastRun": "Sat Oct 29 2022 16:05:18 GMT-0700 (Pacific Daylight Time)"
+        "lastRun": "Thu Nov 17 2022 16:36:29 GMT-0800 (Pacific Standard Time)"
     },
     "configuration": {
         "path": "../gh_pages",
@@ -16,6 +16,11 @@
                 "shortcut": "/newad",
                 "url": "https://itsweb.ucsd.edu/manage-sso/applicant",
                 "title": "Manage SSO tool"
+            },
+            {
+                "shortcut": "/csr",
+                "url": "https://act.ucsd.edu/telecom/csr",
+                "title": "CSR"
             },
             {
                 "shortcut": "/sso",

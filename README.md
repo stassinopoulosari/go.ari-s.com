@@ -8,6 +8,7 @@
 ## Current shortcuts
 
 + **Manage SSO tool**: ucsd.it/newad --> https://itsweb.ucsd.edu/manage-sso/applicant
++ **CSR**: ucsd.it/csr --> https://act.ucsd.edu/telecom/csr
 + **Business Systems Info Page**: ucsd.it/sso --> https://blink.ucsd.edu/technology/network/access/business-systems/index.html
 + **Business Systems Password Reset**: ucsd.it/sso/reset --> https://iam.ucsd.edu/ResetPassword/
 + **Business Systems Self-Registration**: ucsd.it/sso/register --> https://a4.ucsd.edu/selfreg/supplyemail.do
