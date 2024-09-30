@@ -6,71 +6,21 @@
         "a rebuild of the directory specified in the configuration."
     ],
     "data": {
-        "lastRun": "Thu Nov 17 2022 16:40:06 GMT-0800 (Pacific Standard Time)"
+        "lastRun": "Sun Sep 29 2024 18:03:56 GMT-0700 (Pacific Daylight Time)"
     },
     "configuration": {
         "path": "../gh_pages",
         "template": "./redirectPage.html",
         "shortcuts": [
             {
-                "shortcut": "/newad",
-                "url": "https://itsweb.ucsd.edu/manage-sso/applicant",
-                "title": "Manage SSO tool"
-            },
-            {
-                "shortcut": "/csr",
-                "url": "https://act.ucsd.edu/telecom/csr",
-                "title": "CSR"
-            },
-            {
-                "shortcut": "/sso",
-                "url": "https://blink.ucsd.edu/technology/network/access/business-systems/index.html",
-                "title": "Business Systems Info Page"
-            },
-            {
-                "shortcut": "/sso/reset",
-                "url": "https://iam.ucsd.edu/ResetPassword/",
-                "title": "Business Systems Password Reset"
-            },
-            {
-                "shortcut": "/sso/register",
-                "url": "https://a4.ucsd.edu/selfreg/supplyemail.do",
-                "title": "Business Systems Self-Registration"
-            },
-            {
-                "shortcut": "/gpr",
-                "url": "https://sdacs.ucsd.edu/~icc/password.php",
-                "title": "Global Password Reset Tool"
-            },
-            {
-                "shortcut": "/dsasearch",
-                "url": "https://iam.ucsd.edu/dsasearch/",
-                "title": "Business Systems DSA Search"
-            },
-            {
-                "shortcut": "/speed",
-                "url": "https://speedtest.net",
-                "title": "Speedtest.net"
-            },
-            {
-                "shortcut": "/x",
-                "url": "https://mail.ucsd.edu",
-                "title": "UCSD OWA"
-            },
-            {
-                "shortcut": "/g",
-                "url": "https://gmail.ucsd.edu",
-                "title": "UCSD Gmail"
-            },
-            {
-                "shortcut": "/ucl",
-                "url": "https://uc.sumtotal.host/Broker/Account/Login.aspx?wtrealm=https%3a%2f%2fuc.sumtotal.host%2fcore%2f&ReturnUrl=http%3a%2f%2fuc.sumtotal.host%2fBroker%2fToken%2fSaml11.ashx%3fwa%3dwsignin1.0%26wtrealm%3dhttps%3a%2f%2fuc.sumtotal.host%2fcore%2f%26wreply%3dhttp%3a%2f%2fuc.sumtotal.host%2fcore%2f%26whr%3durn%3asumtotalsystems.com&whr=urn%3asumtotalsystems.com&domainid=52160A28FC58BBBE7D714E075077AC76",
-                "title": "UC Learning Login"
+                "shortcut": "/stfrancis",
+                "url": "https://www.kbcmgmt.com/listings/detail/7d5d330c-9662-416f-a109-47d08584db58",
+                "title": "St. Francis open apartment"
             },
             {
                 "shortcut": "/",
-                "url": "https://github.com/stassinopoulosari/ucsd.it#readme",
-                "title": "The Homepage"
+                "url": "https://ari-s.com/",
+                "title": "ari-s.com"
             }
         ]
     }

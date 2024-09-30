@@ -7,18 +7,8 @@
 
 ## Current shortcuts
 
-+ **Manage SSO tool**: ucsd.it/newad --> https://itsweb.ucsd.edu/manage-sso/applicant
-+ **CSR**: ucsd.it/csr --> https://act.ucsd.edu/telecom/csr
-+ **Business Systems Info Page**: ucsd.it/sso --> https://blink.ucsd.edu/technology/network/access/business-systems/index.html
-+ **Business Systems Password Reset**: ucsd.it/sso/reset --> https://iam.ucsd.edu/ResetPassword/
-+ **Business Systems Self-Registration**: ucsd.it/sso/register --> https://a4.ucsd.edu/selfreg/supplyemail.do
-+ **Global Password Reset Tool**: ucsd.it/gpr --> https://sdacs.ucsd.edu/~icc/password.php
-+ **Business Systems DSA Search**: ucsd.it/dsasearch --> https://iam.ucsd.edu/dsasearch/
-+ **Speedtest.net**: ucsd.it/speed --> https://speedtest.net
-+ **UCSD OWA**: ucsd.it/x --> https://mail.ucsd.edu
-+ **UCSD Gmail**: ucsd.it/g --> https://gmail.ucsd.edu
-+ **UC Learning Login**: ucsd.it/ucl --> https://uc.sumtotal.host/Broker/Account/Login.aspx?wtrealm=https%3a%2f%2fuc.sumtotal.host%2fcore%2f&ReturnUrl=http%3a%2f%2fuc.sumtotal.host%2fBroker%2fToken%2fSaml11.ashx%3fwa%3dwsignin1.0%26wtrealm%3dhttps%3a%2f%2fuc.sumtotal.host%2fcore%2f%26wreply%3dhttp%3a%2f%2fuc.sumtotal.host%2fcore%2f%26whr%3durn%3asumtotalsystems.com&whr=urn%3asumtotalsystems.com&domainid=52160A28FC58BBBE7D714E075077AC76
-+ **The Homepage**: ucsd.it/ --> https://github.com/stassinopoulosari/ucsd.it#readme
++ **St. Francis open apartment**: ucsd.it/stfrancis --> https://www.kbcmgmt.com/listings/detail/7d5d330c-9662-416f-a109-47d08584db58
++ **ari-s.com**: ucsd.it/ --> https://ari-s.com/
 
 ## About this branch
 
