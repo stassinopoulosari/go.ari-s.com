@@ -1,7 +1,7 @@
 {
-  "name": "ucsd.it",
-  "version": "1.0.0",
-  "description": "Automated flat-file URL shortener for ucsd.it",
+  "name": "go.ari-s.com",
+  "version": "1.0.1",
+  "description": "Automated flat-file URL shortener for go.ari-s.com",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"

@@ -1,16 +1,17 @@
 {
     "notes": [
-        "You are viewing the configuration file for UCSD.IT.",
+        "You are viewing the configuration file for GO.ARI-S.COM.",
         "All configuration must go in the \"configuration\" list.",
         "Any running index.js will result in changes to this file as well as",
         "a rebuild of the directory specified in the configuration."
     ],
     "data": {
-        "lastRun": "Sun Sep 29 2024 18:03:56 GMT-0700 (Pacific Daylight Time)"
+        "lastRun": "Mon Sep 30 2024 10:23:55 GMT-0700 (Pacific Daylight Time)"
     },
     "configuration": {
         "path": "../gh_pages",
         "template": "./redirectPage.html",
+        "baseURI": "ari-s.com/",
         "shortcuts": [
             {
                 "shortcut": "/stfrancis",
