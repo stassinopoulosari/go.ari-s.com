@@ -6,7 +6,7 @@
 
 ## Current shortcuts
 
-+ **ari-s.com**: ari-s.com// --> https://ari-s.com/
++ **ari-s.com**: go.ari-s.com/ --> https://ari-s.com/
 
 ## About this branch
 

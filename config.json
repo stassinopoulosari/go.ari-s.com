@@ -6,12 +6,12 @@
         "a rebuild of the directory specified in the configuration."
     ],
     "data": {
-        "lastRun": "Tue Nov 05 2024 12:28:27 GMT-0800 (Pacific Standard Time)"
+        "lastRun": "Tue Nov 05 2024 12:29:14 GMT-0800 (Pacific Standard Time)"
     },
     "configuration": {
         "path": "../gh_pages",
         "template": "./redirectPage.html",
-        "baseURI": "ari-s.com/",
+        "baseURI": "go.ari-s.com",
         "shortcuts": [
             {
                 "shortcut": "/",
