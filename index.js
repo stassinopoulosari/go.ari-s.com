@@ -314,6 +314,7 @@ Promise.all([getVersion(), loadConfiguration()]).then((returnedValues) => {
   const config = allConfiguration.configuration,
     path = config.path,
     templatePath = config.template,
+    baseURI = config.baseURI,
     shortcuts = config.shortcuts;
 
   log("Loading template...");
@@ -327,7 +328,7 @@ Promise.all([getVersion(), loadConfiguration()]).then((returnedValues) => {
       writeShortcuts(path, shortcuts, template, version).then(() => {
         Promise.all([
           updateConfiguration(allConfiguration),
-          updateREADME(shortcuts, version),
+          updateREADME(shortcuts, version, baseURI),
         ]).then(() => {
           log("Done!");
         });

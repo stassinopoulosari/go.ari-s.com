@@ -6,8 +6,7 @@
 
 ## Current shortcuts
 
-+ **St. Francis open apartment**: undefined/stfrancis --> https://www.kbcmgmt.com/listings/detail/7d5d330c-9662-416f-a109-47d08584db58
-+ **ari-s.com**: undefined/ --> https://ari-s.com/
++ **ari-s.com**: ari-s.com// --> https://ari-s.com/
 
 ## About this branch
 

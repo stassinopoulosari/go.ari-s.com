@@ -6,18 +6,13 @@
         "a rebuild of the directory specified in the configuration."
     ],
     "data": {
-        "lastRun": "Mon Sep 30 2024 10:23:55 GMT-0700 (Pacific Daylight Time)"
+        "lastRun": "Tue Nov 05 2024 12:28:27 GMT-0800 (Pacific Standard Time)"
     },
     "configuration": {
         "path": "../gh_pages",
         "template": "./redirectPage.html",
         "baseURI": "ari-s.com/",
         "shortcuts": [
-            {
-                "shortcut": "/stfrancis",
-                "url": "https://www.kbcmgmt.com/listings/detail/7d5d330c-9662-416f-a109-47d08584db58",
-                "title": "St. Francis open apartment"
-            },
             {
                 "shortcut": "/",
                 "url": "https://ari-s.com/",
