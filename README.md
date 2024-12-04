@@ -7,6 +7,7 @@
 ## Current shortcuts
 
 + **ari-s.com**: go.ari-s.com/ --> https://ari-s.com/
++ **hci presentation**: go.ari-s.com/hci/ --> https://docs.google.com/presentation/d/1vf4eD4ghyYtT2XjQz6IzPZmGgfcBZmFFHEpOdCDQjVg/edit
 
 ## About this branch
 
