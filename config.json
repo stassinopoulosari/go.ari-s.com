@@ -6,7 +6,7 @@
         "a rebuild of the directory specified in the configuration."
     ],
     "data": {
-        "lastRun": "Tue Dec 03 2024 18:05:46 GMT-0800 (Pacific Standard Time)"
+        "lastRun": "Wed Jul 09 2025 17:30:32 GMT-0700 (Pacific Daylight Time)"
     },
     "configuration": {
         "path": "../gh_pages",
@@ -22,6 +22,11 @@
                 "shortcut": "/hci/",
                 "url": "https://docs.google.com/presentation/d/1vf4eD4ghyYtT2XjQz6IzPZmGgfcBZmFFHEpOdCDQjVg/edit",
                 "title": "hci presentation"
+            },
+            {
+                "shortcut": "/ocr/",
+                "url": "https://colab.research.google.com/drive/1KKziyc4Tz3kfWYp9Vzw1xFYjAUtybpzg",
+                "title": "ocr demo"
             }
         ]
     }
