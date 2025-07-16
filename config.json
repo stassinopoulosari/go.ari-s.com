@@ -6,7 +6,7 @@
         "a rebuild of the directory specified in the configuration."
     ],
     "data": {
-        "lastRun": "Wed Jul 09 2025 17:30:32 GMT-0700 (Pacific Daylight Time)"
+        "lastRun": "Wed Jul 16 2025 16:32:31 GMT-0700 (Pacific Daylight Time)"
     },
     "configuration": {
         "path": "../gh_pages",
@@ -19,14 +19,14 @@
                 "title": "ari-s.com"
             },
             {
-                "shortcut": "/hci/",
-                "url": "https://docs.google.com/presentation/d/1vf4eD4ghyYtT2XjQz6IzPZmGgfcBZmFFHEpOdCDQjVg/edit",
-                "title": "hci presentation"
-            },
-            {
                 "shortcut": "/ocr/",
                 "url": "https://colab.research.google.com/drive/1KKziyc4Tz3kfWYp9Vzw1xFYjAUtybpzg",
                 "title": "ocr demo"
+            },
+            {
+                "shortcut": "/ocrslides/",
+                "url": "https://docs.google.com/presentation/d/1k2JWUmWrmrb340hNw-IbpPDwydQgo6WFiirCFxGZCy0/edit",
+                "title": "ocr slides"
             }
         ]
     }

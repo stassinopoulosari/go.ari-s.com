@@ -7,8 +7,8 @@
 ## Current shortcuts
 
 + **ari-s.com**: go.ari-s.com/ --> https://ari-s.com/
-+ **hci presentation**: go.ari-s.com/hci/ --> https://docs.google.com/presentation/d/1vf4eD4ghyYtT2XjQz6IzPZmGgfcBZmFFHEpOdCDQjVg/edit
 + **ocr demo**: go.ari-s.com/ocr/ --> https://colab.research.google.com/drive/1KKziyc4Tz3kfWYp9Vzw1xFYjAUtybpzg
++ **ocr slides**: go.ari-s.com/ocrslides/ --> https://docs.google.com/presentation/d/1k2JWUmWrmrb340hNw-IbpPDwydQgo6WFiirCFxGZCy0/edit
 
 ## About this branch
 
